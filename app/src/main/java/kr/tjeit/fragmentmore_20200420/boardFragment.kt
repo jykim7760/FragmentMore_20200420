@@ -20,7 +20,7 @@ class boardFragment : BaseFragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_game_list, container, false)
+        return inflater.inflate(R.layout.post_list_item, container, false)
 
     }
 
