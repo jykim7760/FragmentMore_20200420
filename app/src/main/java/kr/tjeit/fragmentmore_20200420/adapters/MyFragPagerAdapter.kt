@@ -9,6 +9,15 @@ import kr.tjeit.fragmentmore_20200420.fragments.MainFragment
 
 class MyFragPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
 
+    override fun getPageTitle(position: Int): CharSequence? {
+        return when(position){
+            0 -> "메인"
+            1 -> "Game"
+            3 -> "Board"
+        }
+    }
+
+
     override fun getItem(position: Int): Fragment {
      return when (position){
          0 -> MainFragment()
