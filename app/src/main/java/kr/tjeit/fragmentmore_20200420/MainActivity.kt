@@ -28,6 +28,7 @@ class MainActivity : BaseActivity() {
     override fun setValues() {
         myViewPager.adapter = MyFragPagerAdapter(supportFragmentManager)
 
+        myViewPager.offscreenPageLimit = 5 //뷰페이저 변수한테 offscreenPageLimit 의 값을 변경하면 ( 보통페이지수와 동일 ) _ 재활용을 하지 않고 미리 모든 프래그먼트를 만든다
         myTabLayout.setupWithViewPager(myViewPager)
 
 
